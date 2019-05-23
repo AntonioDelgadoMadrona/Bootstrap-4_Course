@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Responsive - Utilities</title>
+    
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    
+    <style>
+    
+        .columna {
+            background: #2191fb;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    
+    </style>
+    
+</head>
+
+<body>
+<!--   Mediante la clase d-none oculto el elemento, con la clase d-block lo muestro, de esta forma podemos jugar segun el tamaño-->
+    <div class="container">
+       <div class="row">
+<!--          En XS lo muestro pero de Sm en adelante lo oculto-->
+           <div class="columna col d-xs-block d-sm-none">XS - Extra small</div>
+<!--           Lo tengo oculto, en SM lo muestro y de MD en adelante lo oculto-->
+           <div class="columna col d-none d-sm-block d-md-none">SM - Small</div>
+<!--           Lo tengo oculto, en MD lo muestro y de LG en alente lo oculto-->
+           <div class="columna col d-none d-md-block d-lg-none">MD - Middle</div>
+           <div class="columna col d-none d-lg-block d-xl-none">LG - Large</div>
+           <div class="columna col d-none d-xl-block">XL - Extra large</div>
+       </div>
+    </div>
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

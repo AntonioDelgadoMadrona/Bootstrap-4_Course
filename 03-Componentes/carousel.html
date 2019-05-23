@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+<!--El carousel nos permite mostrar imagenes de forma que vayan pasando-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+<!--               Lo primero es crear el div padre con la clase carousel slide y sus atributos-->
+                <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+<!--                   Los indicadores son para mostrar en que imagen estamos-->
+                    <ol class="carousel-indicators">
+<!--                       La clase active define cual sera la primera en mostrar-->
+<!--                       No olvidar poner en data-target el id del carousel-->
+                        <li data-target="#principal-carousel" data-slid-to="0" class="active"></li>
+                        <li data-target="#principal-carousel" data-slid-to="1"></li>
+                        <li data-target="#principal-carousel" data-slid-to="2"></li>
+                    </ol>
+<!--                    En este div es donde vamos agregar los div con las respectivas imagenes-->
+                    <div class="carousel-inner">
+<!--                       La clase active define que sera la primera imagen en mostrar-->
+                        <div class="carousel-item active">
+                            <img src="../img/carousel1.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/carousel2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/carousel3.jpg" alt="">
+                        </div>
+                    </div>
+<!--                    Los siguientes enlaces permiten mover las imagenes-->
+                    <a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+<!--                       Los span con la clase carousel-prev-icon insertan una flecha sobre el carousel para moverse entre imagenes-->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+<!--Al crear otro carousel en la misma pagina es importante cambiar el id del carousel para que uno no actue sobre el otro-->
+        <div class="row mt-3">
+            <div class="col-12 mt-3">
+                <div class="carousel slide" id="secondary-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#secondary-carousel" data-slid-to="0" class="active"></li>
+                        <li data-target="#secondary-carousel" data-slid-to="1"></li>
+                        <li data-target="#secondary-carousel" data-slid-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+<!--            Para poner un texto sobre estas imagenes basta con crear un div con las clases carousel-caption d-block antes de la imagen-->
+                            <div class="carousel-caption d-block">
+                                <h4>Titulo de la Imagen</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                            </div>
+                            <img src="../img/carousel1.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-block">
+                                <h4>Titulo de la Imagen</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                            </div>
+                            <img src="../img/carousel2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-block">
+                                <h4>Titulo de la Imagen</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                            </div>
+                            <img src="../img/carousel3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a href="#secondary-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

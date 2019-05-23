@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios Inline</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Tambien podemos crear formularios inline, es decir que los inputs esten uno al lado del otro-->
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--Lo primero es crear la etiqueta de form y asignarle la clase form-inline-->
+                <form action="" class="form-inline">
+                    <!--En los input hay que darle la clase form-control, al igual que los demas formularios-->
+                    <input type="text" class="form-control mr-3" name="nombre" id="nombre" placeholder="Nombre">
+                    <!--La diferencia es que estos form-group no adoptan el 100% del contenedor si no que se adaptan-->
+                    <input type="password" class="form-control mr-3" name="password" id="password" placeholder="Contraseña">
+                    <!--En el label tambien asignamos la clase form-check-label al igual que un formulario en bloque-->
+                    <label class="form-check-label mr-3">
+                        <!--En los input de tipo radio o checkbox le asignamos la clase form-check-input-->
+                        <input type="checkbox" name="recordar" id="recordar" class="form-check-input"> Recordar Sesion
+                    </label>
+                    <!--Creamos el boton para enviar el formulario-->
+                    <input type="submit" class="btn btn-success" value="Iniciar Sesion">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

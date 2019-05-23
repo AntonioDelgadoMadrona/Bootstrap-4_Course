@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        .contenedor {
+            margin-bottom: 20px;
+            background: #0275d8;
+            color: #fff;
+        }
+
+        .contenedor div {
+            background: rgba(255, 255, 255, .2);
+            padding: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h4>Tipos de Display Flex</h4>
+                <hr>
+
+                <!-- 
+				Podemos establecer que tipo de elemento flexbox sera, de tipo block o inline.
+				Y podemos establecer tambien desde que dispositivo lo sera.
+
+					.d-flex
+					.d-inline-flex
+
+					.d-sm-flex
+					.d-sm-inline-flex
+					.d-md-flex
+					.d-md-inline-flex
+					.d-lg-flex
+					.d-lg-inline-flex
+					.d-xl-flex
+					.d-xl-inline-flex
+				 -->
+                <!--La clase d-flex en el elemento ocupara el 100% del contenedor y otorga un display flex al elemeneto y a todos los hijos, por lo que es esencial ponerlo -->
+                <div class="d-flex p-3 bg-primary text-white">
+                    <p class="mb-0">Display Flex <strong>.d-flex</strong></p>
+                </div>
+                <!--Sin embargo la clase d-inline-flex ocupara solo el espacio que necesite-->
+                <br>
+                <div class="d-inline-flex p-3 bg-primary text-white">
+                    <p class="mb-0">Display Iniline Flex <strong>.d-inline-flex</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col">
+                <h4>Direction</h4>
+                <hr>
+                <!--Una vez que al elemento padre le hemos dado la clase d-flex o d-inline-flex, a los hijos podemos cambiar la direccion u horientacion mediante las siguientes clases:-->
+                <!-- Variantes
+				    .flex-row
+				    .flex-row-reverse
+				    .flex-column
+				    .flex-column-reverse
+				    .flex-sm-row
+				    .flex-sm-row-reverse
+				    .flex-sm-column
+				    .flex-sm-column-reverse
+				    .flex-md-row
+				    .flex-md-row-reverse
+				    .flex-md-column
+				    .flex-md-column-reverse
+				    .flex-lg-row
+				    .flex-lg-row-reverse
+				    .flex-lg-column
+				    .flex-lg-column-reverse
+				    .flex-xl-row
+				    .flex-xl-row-reverse
+				    .flex-xl-column
+				    .flex-xl-column-reverse
+				 -->
+                <!--La clase flex-row determina que los elementos hijos tomaran direccion horizontal, es decir en forma de fila-->
+                <p>.flex-row</p>
+                <div class="contenedor d-flex flex-row">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase flex-row-reverse es como la anterior clase pero cambiara el orden de los elementos de forma inversa-->
+                <p>.flex-row-reverse</p>
+                <div class="contenedor d-flex flex-row-reverse">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase flex-column determina que los elementos hijos tomaran direccion vertical, es decir en forma de columna-->
+                <p>.flex-column</p>
+                <div class="contenedor d-flex flex-column">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase flex-column-reverse es como la anterior clase pero cambiara el orden de los elementos de forma inversa-->
+                <p>.flex-column-reverse</p>
+                <div class="contenedor d-flex flex-column-reverse">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col">
+                <h4>Justify Content</h4>
+                <hr>
+                <!--Las clases justify-content alinean en el eje horizontal donde deben colocarse los elementos hijos-->
+                <!--Esta clase se le otorga al elemento padre para actuar sobre los hijos, no al contrario-->
+
+                <!-- Variantes:
+					.justify-content-start
+					.justify-content-end
+					.justify-content-center
+					.justify-content-between
+					.justify-content-around
+					.justify-content-sm-start
+					.justify-content-sm-end
+					.justify-content-sm-center
+					.justify-content-sm-between
+					.justify-content-sm-around
+					.justify-content-md-start
+					.justify-content-md-end
+					.justify-content-md-center
+					.justify-content-md-between
+					.justify-content-md-around
+					.justify-content-lg-start
+					.justify-content-lg-end
+					.justify-content-lg-center
+					.justify-content-lg-between
+					.justify-content-lg-around
+					.justify-content-xl-start
+					.justify-content-xl-end
+					.justify-content-xl-center
+					.justify-content-xl-between
+					.justify-content-xl-around
+				 -->
+                <!--Obviamente podemos alinear los hijos dependiendo del dispositivo que nos encontremos, bastaria con añadirle el tamaño de la pantalla donde queremos que se ejecute, recordar que se ejecutara en ese tamaño en adelante salvo que se indique lo contrario-->
+
+                <!--La clase justify-content-start coloca al inicio del contenedor los elementos hijo-->
+                <p>.justify-content-start</p>
+                <div class="contenedor d-flex justify-content-start">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase justify-content-center coloca en el centro del contenedor los elementos hijo-->
+                <p>.justify-content-center</p>
+                <div class="contenedor d-flex justify-content-center">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase justify-content-end coloca al final del contenedor los elementos hijo-->
+                <p>.justify-content-end</p>
+                <div class="contenedor d-flex justify-content-end">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase justify-content-between determina que cada hijo tenga el mayor huco posible entre ellos-->
+                <p>.justify-content-between</p>
+                <div class="contenedor d-flex justify-content-between">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase justify-content-around determina que cada elemento hijo tenga espacio a ambos lados, dejando asi un hueco entre ellos-->
+                <p>.justify-content-around</p>
+                <div class="contenedor d-flex justify-content-around">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

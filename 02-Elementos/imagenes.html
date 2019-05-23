@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Imagenes</title>
+
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+
+<style>
+    
+    .columna {
+        background: #f2f2f2;
+        border: 1px solid #424242;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+<!--    En la ruta htt...lorempixel.. y tamaño crea una imagen aleatoria con el tamaño solicitado-->
+    <div class="container-fluid">
+		<div class="row no-gutters">
+		    <div class="columna col-4">
+<!--            Con la clase img-fluid la imagen se ajusta al ancho de la columna sin importar el tamaño original(siempre que sea igual o mayor)-->
+		        <img class="img-fluid" src="http://lorempixel.com/800/800/" alt="imagen">
+		    </div>
+		</div>
+		<hr>
+		<div class="row no-gutters">
+		    <div class="columna col-4">
+<!--            Con la clase float-left o float-right decimos que las imagenes se posicionen a izquierda y derecha de las columnas-->
+		        <img class="img-fluid float-left" src="http://lorempixel.com/200/200/" alt="imagen">
+		        <img class="img-fluid float-right" src="http://lorempixel.com/200/200/" alt="imagen">
+		    </div>
+		</div>
+		<hr>
+		<div class="row no-gutters">
+		    <div class="col">
+<!--            Con la clase img-thumbnail le crea un marco estilo card a la imagen-->
+		        <img class="img-fluid float-left img-thumbnail" src="http://lorempixel.com/400/400/" alt="imagen">
+<!--		        La clase rounded-circle convierte la imagen en un circulo-->
+		        <img class="img-fluid rounded-circle" src="http://lorempixel.com/400/400/" alt="imagen">
+<!--		        La clase rounded redondea las esquinas de la imagen-->
+		        <img class="img-fluid float-right rounded" src="http://lorempixel.com/400/400/" alt="imagen">
+		    </div>
+		</div>
+		<hr>
+		<div class="row no-gutters">
+<!--        La siguiente estructura permite colocar un texto debajo de las imagenes-->
+		    <div class="col-6">
+                <figure class="figure">
+                    <img class="img-fluid" src="http://lorempixel.com/400/400/" alt="imagen">
+                    <figcaption class="figure-caption">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, voluptates!</p>
+                    </figcaption>
+                </figure>                         
+		    </div>
+		</div>
+		
+	</div>
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

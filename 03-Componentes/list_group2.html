@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List Group 2</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Tambien podemos crear unas listas que al pulsar el elemento muestre un texto y al pulsar otro se oculte-->
+    <div class="container">
+        <!--Lo primero es crear un container que abarque tanto la lista como el texto a mostrar-->
+        <div class="row mt-3">
+            <!--Despues del row creamos las columnas que contendran la lista y el texto a mostrar-->
+            <div class="col-4">
+                <!--A la lista le damos la clase de list-group junto con un id y un role de tablist (para dispositivos de lectura)-->
+                <div class="list-group" id="lista" role="tablist">
+                    <!--A cada elemento le asiganmos las siguientes clases y atributos-->
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#elemento1" role="tab" aria-controls="elemento1">Home</a>
+                    <!--El href de cada elemento tiene que ser el id del elemento que queremos mostrar-->
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#elemento2" role="tab" aria-controls="elemento2">Profile</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#elemento3" role="tab" aria-controls="elemento3">Messages</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#elemento4" role="tab" aria-controls="elemento4">Settings</a>
+                </div>
+            </div>
+            <!--Continuamos con la columna del texto-->
+            <div class="col-8">
+                <!--Despues del col creamos los div con la clase tab-content y un id para referenciarlo-->
+                <div class="tab-content" id="nav-tabContent">
+                    <!--Cada elemento debe tener la clase tab-pane fade show y active si queremos que inicie mostrado-->
+                    <!--Cada elemento debe de tener de id el mismo nombre referenciado en el href de los slementos que referencian-->
+                    <div class="tab-pane fade show active" id="elemento1" role="tabpanel" aria-labelledby="elemento1">
+                        <h3>Titulo #1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="tab-pane fade show" id="elemento2" role="tabpanel" aria-labelledby="elemento2">
+                        <h3>Titulo #2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="tab-pane fade show" id="elemento3" role="tabpanel" aria-labelledby="elemento3">
+                        <h3>Titulo #3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="tab-pane fade show" id="elemento4" role="tabpanel" aria-labelledby="elemento4">
+                        <h3>Titulo #4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

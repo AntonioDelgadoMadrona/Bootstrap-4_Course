@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ventanas Modal</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--El componente modal nos permite que cuando pulsemos el elemento se cree una ventana emergente-->
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--Delante del div con el contenido creamos un boton con los siguientes atributos, el data-target es el que referencia el contenedor a mostrar-->
+                <button class="btn btn-primary" data-toggle="modal" data-target="#fm-modal">Abrir Modal</button>
+                <!--El elemento a mostrar debe tener la clase modal y un id que sea referenciado por el boton, asi como los demas atributos-->
+                <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+                    <!--lo siguiente es crear otro div con la clase modal-dialog-->
+                    <div class="modal-dialog">
+                        <!--Despues otro div con la clase clase modal-content, el cual contiene: -->
+                        <div class="modal-content">
+                            <!--Si queremos darle un titulo al modal, creamos un div con la clase modal-header la cual contendra: -->
+                            <div class="modal-header">
+                                <!--Al encabezado le damos la clase de modal-title-->
+                                <h5 class="modal-title" id="">Titulo de la ventana</h5>
+                                <!--No olvidar crear un boton para poder cerrar la ventana modal-->
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!--A continuacion creamos otro div con la clase modal-body, el cual contendra el contenido -->
+                            <div class="modal-body">
+                                <h2>Hola Mundo</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Tambien podemos utilizar la grid de bootstrap en el modal para darle un estilo estructurado-->
+                <!--Seria igual que el anterior modal salvo que cambiariamos el body-->
+                <button class="btn btn-primary" data-toggle="modal" data-target="#fm-modal-grid">Abrir Modal con Grid</button>
+                <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="">GRID</h5>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!--Creamos el div con la clase modal-body-->
+                            <div class="modal-body">
+                                <!--Despues creamos un div con la clase container-->
+                                <div class="container-fluid">
+                                    <!--Luego un row que contendra los col-->
+                                    <div class="row">
+                                        <!--Obviamenente podemos asignarles clases que actuen segun la pantalla del dispositivo-->
+                                        <div class="col-12 col-sm-6">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Al igual que el header, el modal tambien puede tener un footer-->
+                            <div class="modal-footer">
+                                <button class="btn btn-success">Aceptar</button>
+                                <!--El atributo data-dismiss y el mismo nombre del data-togle del div abuelo permite cerrar el mismo-->
+                                <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

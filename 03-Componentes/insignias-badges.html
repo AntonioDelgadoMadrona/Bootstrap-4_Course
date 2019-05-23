@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alertas</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Los badges nos dan la opcion de crear una etiqueta que nos de informacion adicional como por ejemplo "NUEVO" para un e-commerce-->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <!--               Las diferentes etiquetas tienen los diferentes colores de bootstrap-->
+                <!--               Si colocamos un badge dentro de una etiqueta de encabezado, adoptara un tamaño grande-->
+                <!--               La clase badge crea la etiqueta, la clase badge-secondary le da un color secundario-->
+                <h1>Encabezado H1 <span class="badge badge-secondary">Etiqueta</span></h1>
+                <h2>Encabezado H2 <span class="badge badge-secondary">Etiqueta</span></h2>
+                <h3>Encabezado H3 <span class="badge badge-secondary">Etiqueta</span></h3>
+                <h4>Encabezado H4 <span class="badge badge-secondary">Etiqueta</span></h4>
+                <h5>Encabezado H5 <span class="badge badge-secondary">Etiqueta</span></h5>
+                <h6>Encabezado H6 <span class="badge badge-secondary">Etiqueta</span></h6>
+            </div>
+            <!--        La clase badge-pill le da unos bordes redondeados a la insignia-->
+            <div class="col-6">
+                <h3>Encabezado H3 <span class="badge badge-pill badge-primary">Etiqueta</span></h3>
+                <h3>Encabezado H3 <span class="badge badge-pill badge-secondary">Etiqueta</span></h3>
+                <h3>Encabezado H3 <span class="badge badge-pill badge-success">Etiqueta</span></h3>
+                <h3>Encabezado H3 <span class="badge badge-pill badge-info">Etiqueta</span></h3>
+                <h3>Encabezado H3 <span class="badge badge-pill badge-warning">Etiqueta</span></h3>
+                <h3>Encabezado H3 <span class="badge badge-pill badge-danger">Etiqueta</span></h3>
+                <h3>Encabezado H3 <span class="badge badge-pill badge-dark">Etiqueta</span></h3>
+                <h3>Encabezado H3 <span class="badge badge-pill badge-light">Etiqueta</span></h3>
+            </div>
+
+            <div class="col-12 mb-3">
+                <a href="#" class="badge badge-primary">Primary</a>
+                <a href="#" class="badge badge-secondary">Secondary</a>
+                <a href="#" class="badge badge-success">Success</a>
+                <a href="#" class="badge badge-danger">Danger</a>
+                <a href="#" class="badge badge-warning">Warning</a>
+                <a href="#" class="badge badge-info">Info</a>
+                <a href="#" class="badge badge-light">Light</a>
+                <a href="#" class="badge badge-dark">Dark</a>
+            </div>
+
+            <div class="col-12 mb-3">
+                <a href="#" class="badge badge-pill badge-primary">Primary</a>
+                <a href="#" class="badge badge-pill badge-secondary">Secondary</a>
+                <a href="#" class="badge badge-pill badge-success">Success</a>
+                <a href="#" class="badge badge-pill badge-danger">Danger</a>
+                <a href="#" class="badge badge-pill badge-warning">Warning</a>
+                <a href="#" class="badge badge-pill badge-info">Info</a>
+                <a href="#" class="badge badge-pill badge-light">Light</a>
+                <a href="#" class="badge badge-pill badge-dark">Dark</a>
+            </div>
+            <!--            Dentro de los botones podemos crear etiquetas dentro, esto es muy util para mostrar un boton con de notificaciones con el numero de notificacion mostrado en la insignia-->
+            <div class="col-12 mb-3">
+                <button class="btn  mb-2">
+                    Notificaciones <span class="badge badge-dark">10</span>
+                </button>
+
+                <button class="btn btn-dark mb-2">
+                    Notificaciones <span class="badge badge-light">10</span>
+                </button>
+
+                <button class="btn btn-primary mb-2">
+                    Notificaciones <span class="badge badge-light">10</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

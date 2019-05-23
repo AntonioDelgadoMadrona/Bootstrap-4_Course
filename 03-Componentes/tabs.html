@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <!--Los tabs nos sirven para crear un menu de navegacion con estilo diferentes-->
+    <div class="container">
+        <!--Al igual que en navs podemos trabajar con lista o con elementos nav-->
+        <div class="row mt-3">
+            <div class="col">
+                <!--A la lista le damos la clase nav nav-tabs-->
+                <ul class="nav nav-tabs">
+                    <!--A los elementos le damos la clase nav-item-->
+                    <li class="nav-item">
+                        <!--A los enlaces le asignamos la clase nav-link-->
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Tambien podemos crear un menu con estilo en forma de boton/pill-->
+        <div class="row mt-3">
+            <div class="col">
+                <!--A la lista o nav le damos la clase nav nav-pills-->
+                <ul class="nav nav-pills">
+                    <!--Los elementos con la clase nav-item-->
+                    <li class="nav-item">
+                        <!--Los enlaces con la clase nav-link-->
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Otro estilo de tabs es el siguiente-->
+        <div class="row mt-3">
+            <div class="col">
+                <!--A la lista/nav le asignamos las clases nav nav-pills nav-fill-->
+                <ul class="nav nav-pills nav-fill">
+                    <!--Cada elemento con la clase nav-item-->
+                    <li class="nav-item">
+                        <!--Cada enlace con la clase nav-link-->
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ml-1 mr-1 active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ml-1 mr-1 active">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ml-1 mr-1 active disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ml-1 mr-1 active">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Tambien podemos añadirle a cualquier elemento del menu otro menu, por ejemplo de estilo dropdown-->
+        <div class="row mt-3">
+            <div class="col">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <!--Al siguiente elemento le asignamos la clase de nav-item (como siempre) y la clase de dropdown-->
+                    <li class="nav-item dropdown">
+                        <!--A los enlace le asignamos la clase de nav-link (como siempre) y la clase dropdown-toggle asi como los siguientes atributos-->
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <!--Creamos un div con la clase dropdown-menu que contendra los elementos en su interior-->
+                        <div class="dropdown-menu">
+                            <!--A cada elemento le asignamos la clase dropdown-item-->
+                            <a href="#" class="dropdown-item">Categoria 1</a>
+                            <a href="#" class="dropdown-item">Categoria 2</a>
+                            <a href="#" class="dropdown-item">Categoria 3</a>
+                        </div>
+                    </li>
+                    <!--Los demas elementos siguen igualmente-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--EL dropdown a los elementos hijos podemos asignarlos a cualqquier tipo de menu, por ejemplo el nav-pills-->
+        <!--Excepto las clases predeterminadas es igual que el anterior nav-->
+        <div class="row mt-3">
+            <div class="col">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Categoria 1</a>
+                            <a href="#" class="dropdown-item">Categoria 2</a>
+                            <a href="#" class="dropdown-item">Categoria 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Tambien podemos crear un 'menu' en el cual al pulsar sobre un elemnto nos muestre un contenido-->
+        <div class="row mt-3">
+            <div class="col">
+                <!--Creamos la lista con elementos-->
+                <ul class="nav nav-tabs">
+                    <!--Al elemento le asignamos la clase nav-item-->
+                    <li class="nav-item">
+                        <!--A los enlaces o botones le asignamos la clase nav-link asi como el atributo data-toggle=tab-->
+                        <a href="#tab1" class="nav-link active" data-toggle="tab">Tab 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab2" class="nav-link" data-toggle="tab">Tab 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab3" class="nav-link" data-toggle="tab">Tab 3</a>
+                    </li>
+                </ul>
+                <!--Creamos el div que contenga los contenidos a mostrar con la clase tab-content-->
+                <div class="tab-content">
+                    <!--A cada elemento le asignamos la clase tab-pane y con el id que sea referenciado por el href del enlace de los elementos-->
+                    <div class="tab-pane active" id="tab1" role="tabpanel">
+                        <h3 class="mt-3">Panel 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-pane" id="tab2" role="tabpanel">
+                        <h3 class="mt-3">Panel 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-pane" id="tab3" role="tabpanel">
+                        <h3 class="mt-3">Panel 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

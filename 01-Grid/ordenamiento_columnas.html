@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Ordenamiento de columnas</title>
+
+    <style>
+        .row {
+            background-color: coral;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .columna {
+            background-color: darkseagreen;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+    </style>
+    
+
+</head>
+
+<body>
+<!--    La clase order permite cambiar el orden en el que aparecen las columnas, esto es muy util para diferentes tamaños de pantalla-->
+    <div class="container">
+        <div class="row justify-content-between">
+<!--           El orden por defecto es el 4 pero de pantallas md en adelante sera de 1...-->
+            <div class="col-2 columna order-4 order-md-1">Columna 1</div>
+            <div class="col-2 columna order-3 order-md-2">Columna 2</div>
+            <div class="col-2 columna order-2 order-md-3">Columna 3</div>
+            <div class="col-2 columna order-1 order-md-4">Columna 4</div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

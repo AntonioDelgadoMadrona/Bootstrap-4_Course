@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Input Group</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Los input-group permiten unir los label y el input de forma que sean un mismo conjunto-->
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--Antes de nada tenemos que crear un div con la clase input-group el cual junta el label con el input-->
+                <div class="input-group mb-3">
+                    <!--La clase input-group-prepend coloca el label al inicio del input, es decir a la izquierda-->
+                    <div class="input-group-prepend">
+                        <!--Dentro del input-group-prepend colocamos un span a modo de label con la clase input-group-text-->
+                        <span class="input-group-text">Nombre</span>
+                    </div>
+                    <!--El input debe de tener la clase form-control, al igual que los demas formularios-->
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+                <!--Para crear otro input del mismo estilo debemos de crear otro div con la clase input-group y dentro va el contenido-->
+                <div class="input-group mb-3">
+                    <input type="text" name="" id="" class="form-control">
+                    <!--Si queremos poner el 'label' al final del input basta con cambiar el input-group-append en lugar de prepend-->
+                    <div class="input-group-append">
+                        <span class="input-group-text">@correo.com</span>
+                    </div>
+                </div>
+
+                <hr>
+                <!--Si queremos crear un input que solo se vea en determinadas pantallas basta con añadirle la clase input-group-(tamaño donde ver)-->
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Nombre</span>
+                    </div>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+                <!--Este input se vera en pantallas mas grandes de lg-->
+                <div class="input-group input-group-lg mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Nombre</span>
+                    </div>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+
+                <hr>
+                <div class="input-group">
+                    <input type="text" name="" id="buscar" class="form-control" placeholder="Buscar">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

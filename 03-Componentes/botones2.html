@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Botones 2</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+<!--   Tambien existen botones tipo checkbox (para seleccionar una serie de opciones) o de tipo radio (elegir una opcion de las que hay)-->
+   <div class="container">
+		<div class="row pt-5">
+			<div class="col-6">
+				<h2>Checkbox</h2>
+				<hr>
+<!--                La clase btn-group define que los botones estaran en linea, uno pegado al otro-->
+<!--            La clase btn-group-toggle es la que le da un estilo de boton de bootstrap-->
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<!--				Checkbox es un input por lo que creamos un label y le damos la clase btn, en su interior creamos el button-->
+					<label class="btn btn-primary">
+						<input type="checkbox" name="" id="" autocomplete="off">Checkbox 1
+					</label>
+					<label class="btn btn-primary active">
+						<input type="checkbox" name="" id="" autocomplete="off">Checkbox 2
+					</label>
+					<label class="btn btn-primary">
+						<input type="checkbox" name="" id="" autocomplete="off">Checkbox 3
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row pt-5">
+			<div class="col-6">
+				<h2>Radio Button</h2>
+				<hr>
+<!--                Los radio-button funcionan igual que los checkbox, solo basta con cambiar el type y el mismo name-->
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-success">
+						<input type="radio" name="sexo" id="hombre" autocomplete="off">Hombre
+					</label>
+					<label class="btn btn-danger">
+						<input type="radio" name="sexo" id="mujer" autocomplete="off">Mujer
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

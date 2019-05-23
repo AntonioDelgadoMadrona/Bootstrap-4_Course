@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cards 2</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+<!--Tambien podemos tener cards juntas en la misma columna-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Card Group</h3>
+<!--                Con la clase card-group agrupamos las cards de su interior dentro del mismo contenedor-->
+                <div class="card-group mt-3">
+                    <div class="card">
+<!--                       Hay que tener en cuenta las clases de las imagenes para que se adapten a la card-->
+                        <img src="../img/bg.jpg" class="card-image-top img-fluid" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">Encabezado</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt natus, odit eius impedit provident fugiat voluptatum, doloremque repudiandae nemo aspernatur delectus quas, placeat alias animi pariatur culpa sunt asperiores, et!</p>
+                            <button class="btn btn-primary btn-block">Boton</button>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Footer</small>
+                        </div>
+                    </div>
+<!--                    Cuantas mas cards mas estrechas seran cada una obviamente-->
+                    <div class="card">
+                        <img src="../img/bg.jpg" class="card-image-top img-fluid" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">Encabezado</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <button class="btn btn-primary btn-block">Boton</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../img/bg.jpg" class="card-image-top img-fluid" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">Encabezado</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt natus, odit eius impedit provident fugiat voluptatum, doloremque repudiandae nemo aspernatur delectus quas, placeat alias animi pariatur culpa sunt asperiores, et!</p>
+                            <button class="btn btn-primary btn-block">Boton</button>
+                        </div>
+<!--                El card-footer estara siempre a la misma altura que los demas de las otras cards, por lo que el alto del card-body variará-->
+                        <div class="card-footer">
+                            <small class="text-muted">Footer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

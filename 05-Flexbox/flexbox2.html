@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox 2</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        .contenedor {
+            margin-bottom: 20px;
+            background: #0275d8;
+            color: #fff;
+            height: 100px;
+        }
+
+        .contenedor div {
+            background: rgba(255, 255, 255, .2);
+            padding: 15px;
+            border: 1px solid #000;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!--En esta ocasion veremos el alineamiento de los elementos de forma vertical-->
+    <div class="container">
+        <div class="row my-4">
+            <div class="col">
+                <h4>Align Items</h4>
+                <hr>
+                <!--La clase align-item-start alinea el elemento de forma que se coloque en la parte superior del contenedor (en el eje vertical)-->
+                <p>.align-items-start</p>
+                <div class="contenedor d-flex align-items-start">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase align-item-center alinea el elemento de forma que se coloque en la parte central del contenedor (en el eje vertical)-->
+                <p>.align-items-center</p>
+                <div class="contenedor d-flex align-items-center">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase align-item-end alinea el elemento de forma que se coloque en la parte inferior del contenedor (en el eje vertical)-->
+                <p>.align-items-end</p>
+                <div class="contenedor d-flex align-items-end">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase align-item-baseline alinea el elemento de forma que coloque a todos los hijos en el mismo eje vertical -->
+                <p>.align-items-baseline</p>
+                <div class="contenedor d-flex align-items-baseline">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--La clase align-item-stretch alinea el elemento de forma que ocupa todo el alto del contenedor -->
+                <p>.align-items-stretch</p>
+                <div class="contenedor d-flex align-items-stretch">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--Por supuesto tambien podemos otorgar clases en funcion de la pantalla del dispositivo-->
+
+                <!-- Variantes:
+					.align-items-start
+					.align-items-end
+					.align-items-center
+					.align-items-baseline
+					.align-items-stretch
+					.align-items-sm-start
+					.align-items-sm-end
+					.align-items-sm-center
+					.align-items-sm-baseline
+					.align-items-sm-stretch
+					.align-items-md-start
+					.align-items-md-end
+					.align-items-md-center
+					.align-items-md-baseline
+					.align-items-md-stretch
+					.align-items-lg-start
+					.align-items-lg-end
+					.align-items-lg-center
+					.align-items-lg-baseline
+					.align-items-lg-stretch
+					.align-items-xl-start
+					.align-items-xl-end
+					.align-items-xl-center
+					.align-items-xl-baseline
+					.align-items-xl-stretch
+				-->
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col">
+                <h4>Align Self</h4>
+                <hr>
+                <!--Lo primero es otorgarle la clase d-flex o d-inline-flex al elemento padre-->
+                <div class="contenedor d-flex">
+                    <!--Las clases align-self se le otorgan al elemento concreto que queremos alinear en el eje vertical-->
+                    <!--La clase align-self-start coloca al elemento en la parte superior del contenedor (en el eje vertical)-->
+                    <div class="align-self-start">.align-self-start</div>
+                    <!--La clase align-self-center coloca al elemento en la parte central del contenedor (en el eje vertical)-->
+                    <div class="align-self-center">.align-self-center</div>
+                    <!--La clase align-self-end coloca al elemento en la parte inferior del contenedor (en el eje vertical)-->
+                    <div class="align-self-end">.align-self-end</div>
+                    <!--La clase align-self-baseline coloca al elemento en funcion del alto necesario conforme al contenedor (en el eje vertical)-->
+                    <div class="align-self-baseline">.align-self-baseline</div>
+                    <!--La clase align-self-stretch otorga al elemento el 100% del alto del contenedor-->
+                    <div class="align-self-stretch">.align-self-stretch</div>
+                </div>
+                <!--Igualmento podemos otorgar clase en fucnion de la pantalla del dispositivo-->
+
+                <!-- Variantes:
+					.align-self-start
+					.align-self-end
+					.align-self-center
+					.align-self-baseline
+					.align-self-stretch
+					.align-self-sm-start
+					.align-self-sm-end
+					.align-self-sm-center
+					.align-self-sm-baseline
+					.align-self-sm-stretch
+					.align-self-md-start
+					.align-self-md-end
+					.align-self-md-center
+					.align-self-md-baseline
+					.align-self-md-stretch
+					.align-self-lg-start
+					.align-self-lg-end
+					.align-self-lg-center
+					.align-self-lg-baseline
+					.align-self-lg-stretch
+					.align-self-xl-start
+					.align-self-xl-end
+					.align-self-xl-center
+					.align-self-xl-baseline
+					.align-self-xl-stretch
+				-->
+            </div>
+        </div>
+        <!--Con las clases de margin auto decimos que el elemento tenga un margen lo mas lejos posible respecto al elemento segun la direccion-->
+        <div class="row my-4">
+            <div class="col">
+                <h4>Auto Margins</h4>
+                <hr>
+                <!--Lo primero es dar la clase d-flex al elemento padre-->
+                <div class="contenedor d-flex justify-content-end">
+                    <!--La clase mr-auto otorga un margen derecho automatico al elemento por lo que sera desplazdo a la izquierda lo maximo-->
+                    <div class="mr-auto">.mr-auto</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--Lo primero es dar la clase d-flex al elemento padre-->
+                <div class="contenedor d-flex justify-content-start">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <!--La clase ml-auto otorga un margen izquierdo automatico al elemento por lo que sera desplazdo a la derecha lo maximo-->
+                    <div class="ml-auto">.ml-auto</div>
+                </div>
+                <!--Lo primero es dar la clase d-flex al elemento padre-->
+                <div class="contenedor d-flex flex-column align-items-start" style="height: 250px;">
+                    <!--La clase mb-auto otorga un margen inferior automatico al elemento por lo que sera desplazdo hacia arriba lo maximo-->
+                    <div class="mb-auto">.mb-auto</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <!--Lo primero es dar la clase d-flex al elemento padre-->
+                <div class="contenedor d-flex flex-column align-items-end" style="height: 250px;">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <!--La clase mt-auto otorga un margen superior automatico al elemento por lo que sera desplazdo hacia abajo lo maximo-->
+                    <div class="mt-auto">.mt-auto</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

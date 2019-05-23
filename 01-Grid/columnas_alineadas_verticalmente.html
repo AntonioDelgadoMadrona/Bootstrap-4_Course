@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Columnas alineadas verticalmente</title>
+    
+    <style>
+        .row {
+            background: beige;
+            height: 150px;
+            margin-top: 20px;
+        }
+        
+        .col {
+            background-color: azure;
+            text-align: center;
+            padding: 10px; 
+            border: 1px solid blue;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+<!--   Con la clase align-items-(start/center/end) podemos alinear las columnas (aplicar a las filas) verticalmente respecto a la fila -->
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">Columna 1</div>       
+            <div class="col">Columna 1</div>             
+            <div class="col">Columna 1</div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">Columna 1</div>       
+            <div class="col">Columna 1</div>             
+            <div class="col">Columna 1</div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">Columna 1</div>       
+            <div class="col">Columna 1</div>             
+            <div class="col">Columna 1</div>
+        </div>
+        
+        
+<!--        Con la clase align-self-(start/center/end) podemos alinear las columnas(se le aplica a las columnas) en el eje vertical de manera independiente una de las otras-->
+        <br><br>
+        <h2>Columnas Independientes</h2>
+        
+        <div class="row">
+            <div class="col align-self-start">Columna 1</div>
+            <div class="col align-self-center">Columna 2</div>
+            <div class="col align-self-end">Columna 3</div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

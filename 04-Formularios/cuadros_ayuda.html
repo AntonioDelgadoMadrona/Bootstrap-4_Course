@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cuadros de ayuda</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Los cuadros de ayuda muestran debajo del input informacion relevante en cuanto a que poner, maximo de caracteres...-->
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--Lo primero es crear el formulario-->
+                <form action="">
+                    <!--Cada grupo de de label e input lo encerramos en un div con la clase form-group-->
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+                        <!--Basta con poner un <p> el cual tenga la clase form-text y form-muted, si le asignamos un id podemos juagar con el elemento de manera que lo mostremos cuando queramos-->
+                        <p id="" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="correo" id="correo" placeholder="Correo">
+                        <!--Tambien podemos encerrar el texto entre etiquetas <small> la cual le da una letra mas pequeña y mas chula-->
+                        <small class="form-text text-muted">Maximo 50 Caracteres</small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

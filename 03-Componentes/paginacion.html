@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paginacion</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!--El componente de paginacion es util cuando tenemos varias paginas en nuestra web-->
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--La paginacion es una lista que nos permite navegar entre paginas, por lo que lo primero es crear el elemento <nav>-->
+                <nav>
+                    <!--Lo siguiente es crear la lista de paginas-->
+                    <!--Creamos el <ul> con la clase pagination-->
+                    <ul class="pagination">
+                        <!--A cada elemento le damos la clase page-item, podemos utilizar las clases disabled y active segun veamos-->
+                        <!--Lo primero de la <ul> es crear los elementos de anterior y siguiente para poder navegar entre paginas-->
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&laquo; Anterior</span>
+                        </li>
+                        <!--Cada elemento de la lista contendra un enlace hacia la pagina deseada-->
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">Siguiente &raquo; </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Existe la clase pagination-lg, la cual creará un nav de un tamaño mas grande-->
+                <nav>
+                    <ul class="pagination pagination-lg">
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&laquo; Anterior</span>
+                        </li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">Siguiente &raquo; </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Existe la clase pagination-sm, la cual creará un nav de un tamaño mas pequeño-->
+                <nav>
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&laquo; Anterior</span>
+                        </li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">Siguiente &raquo; </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--A los nav podemos colocarlos segun queramos respecto al contenedor-->
+        <div class="row mt-3">
+            <div class="col">
+                <nav>
+                    <!--Bastaria con darle clase de justify-content-start, center, end... segun la posicion deseada-->
+                    <ul class="pagination d-flex justify-content-start">
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&laquo; Anterior</span>
+                        </li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">Siguiente &raquo; </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul class="pagination d-flex justify-content-center">
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&laquo; Anterior</span>
+                        </li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">Siguiente &raquo; </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul class="pagination d-flex justify-content-end">
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&laquo; Anterior</span>
+                        </li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">Siguiente &raquo; </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

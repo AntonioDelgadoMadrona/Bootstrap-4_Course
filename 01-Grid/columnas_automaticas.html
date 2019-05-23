@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Columnas Automaticas</title>
+    <style>
+        .row > div {
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .uno {
+            background: grey;
+        }
+        
+        .dos {
+            background: beige;
+            padding: 0 20px;
+        }
+        
+        .tres {
+            background: grey;
+        }
+        
+        .cuatro {
+            background: beige;
+            padding: 0 20px;
+        }
+        
+        
+    </style>
+</head>
+<!--Con el div de width 100, metemos un salto de linea entre columnas de una misma fila, tiene la misma funcion que insertar otra fila.-->
+<!--Utilizando la clase col-auto, el tamaño de la columna se adapta al texto-->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col uno">
+                <h3>Columna 1</h3>
+            </div>
+            <div class="col dos">
+                <h3>Columna 2</h3>
+            </div>
+            <div class="w-100"></div>
+            <div class="col tres">
+                <h3>Columna 3</h3>
+            </div>
+            <div class="col cuatro">
+                <h3>Columna 4</h3>
+            </div>
+   
+        </div>
+    </div>
+
+
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

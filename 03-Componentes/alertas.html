@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Alertas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<!--Las alertas son cuadros de colores muy utiles para mostrar un mensaje con los diferentes colores-->
+	<div class="container">
+		<div class="row">
+			<div class="col">
+<!--			La clase alert le da el estilo del componente de alerta, mientras que alert-succes le da un color verde claro-->
+				<div class="alert alert-success mt-3">
+<!--				Al mismo tiempo podemos encerrar palabras entre etiquetas de strong para remarcar que es un aviso-->
+					<strong>Aviso</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Consequatur, maiores?</a>
+				</div>
+<!--                La clase alert-info le da un color azulado-->
+				<div class="alert alert-info mt-3">
+<!--				A los enlaces podemos darle una clase de alert-link para destacar el enlace de la alerta-->
+					<strong>Aviso</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Consequatur, maiores?</a>
+				</div>
+<!--                La clase alert-warning le da un color amarillento-->
+				<div class="alert alert-warning mt-3">
+					<strong>Aviso</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Consequatur, maiores?</a>
+				</div>
+<!--                La clase alert-danger le da un color rojo-->
+				<div class="alert alert-danger mt-3">
+					<strong>Aviso</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Consequatur, maiores?</a>
+				</div>
+
+				<!-- Nuevos Colores -->
+<!--                La clase alert-primary le asigna el color primario(azul mas intenso)-->
+				<div class="alert alert-primary mt-3">
+					<strong>Aviso</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Consequatur, maiores?</a>
+				</div>
+<!--                La clase alert-secondary le asigna un color grisaceo-->
+				<div class="alert alert-secondary mt-3">
+					<strong>Aviso</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Consequatur, maiores?</a>
+				</div>
+<!--                La clase alert-light le da un color claro, muy util para temas oscuros-->
+				<div class="alert alert-light mt-3">
+					<strong>Aviso</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Consequatur, maiores?</a>
+				</div>
+<!--                La clase alert-dark le asigna un color grisaceo, algo mas fuerte que el secondary-->
+				<div class="alert alert-dark mt-3">
+					<strong>Aviso</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Consequatur, maiores?</a>
+				</div>
+<!--                Al mismo tiempo podemos agregarle a la alerta cualquier tipod de etiqueta, como encabezados-->
+				<div class="alert alert-success mt-5">
+					<h2>Encabezado</h2>
+					<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+            
+				<div class="alert alert-info mt-5" id="alerta">
+					Lorem ipsum dolor sit amet.
+<!--	A las alertas podemos agregarle un boton que cierre la misma, con la clase 'close'-->
+<!--        No olvidar poner los atributos data-dismiss y aria-label(para dispositivos de lectura)-->
+					<button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+<!--					Con el comando siguiente creamos el efecto-->
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Offseting</title>
+
+    <style>
+        .row {
+            background-color: coral;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .columna {
+            background-color: darkseagreen;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+    </style>
+    
+
+</head>
+
+<body>
+<!-- La clase offset permite añadir / desplazar una columna cuantas columnas / espacios se quieran-->
+  <div class="container-fluid">
+      <div class="row">
+<!--        Va a ocupar una columna automatica (en funcion a lo que necesite) y tendra una por delante-->
+          <div class="col-auto columna offset-1">Columna</div>
+      </div>
+      <div class="row">
+<!--         De esta manera quedara centrado ya que tendra 4 columnas delante y ocupa otras 4-->
+          <div class="col-4 columna offset-4">Columna</div> 
+      </div>
+      <div class="row">
+<!--         Va a ocupar un col auto y tendran cada una 1 columna delante-->
+          <div class="col-auto columna offset-1">Columna</div>
+          <div class="col-auto columna offset-1">Columna</div>
+      </div>
+      <div class="row">
+<!--        Tambien podemos definir un offset diferente en funcion del tamaño de pantalla-->
+          <div class="col-4 columna offset-1 offset-sm-1 offset-md-4 offset-lg-0">Columna</div>
+      </div>
+  </div>
+</body>
+
+</html>

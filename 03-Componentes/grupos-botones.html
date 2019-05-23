@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grupos de botones</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+<!--Los grupos de botones permiten agrupar botones en un mismo elemento-->
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col">
+                <div class="btn-group">
+<!--                   Cada boton puede tener un estilo diferente, visto anteriormente-->
+                    <button class="btn btn-secondary">1</button>
+                    <button class="btn btn-secondary">2</button>
+                    <button class="btn btn-secondary">3</button>
+                    <button class="btn btn-secondary">4</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row pt-5">
+            <div class="col">
+<!--               La clase btn-toolbar permite agrupar mas botones, asi como btn-group con mas botones-->
+                <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group mr-4">
+                        <button class="btn btn-secondary">1</button>
+                        <button class="btn btn-secondary">2</button>
+                        <button class="btn btn-secondary">3</button>
+                        <button class="btn btn-secondary">4</button>
+                    </div>
+<!--                    Al igual que antes, podemos agrupar botones dentro del btn-toolbar-->
+                    <div class="btn-group mr-4">
+                        <button class="btn btn-secondary">1</button>
+                        <button class="btn btn-secondary">2</button>
+                        <button class="btn btn-secondary">3</button>
+                        <button class="btn btn-secondary">4</button>
+                    </div>
+
+                    <div class="btn-group mr-4">
+                        <button class="btn btn-secondary">1</button>
+                        <button class="btn btn-secondary">2</button>
+                        <button class="btn btn-secondary">3</button>
+                        <button class="btn btn-secondary">4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Los grupos de botones admiten la clase btn-group-lg o btn-group-sm para darle diferente tamaño al grupo-->
+        <div class="row pt-5">
+            <div class="col">
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-secondary">1</button>
+                    <button class="btn btn-secondary">2</button>
+                    <button class="btn btn-secondary">3</button>
+                    <button class="btn btn-secondary">4</button>
+                </div>
+                <br><br>
+                <div class="btn-group btn-group-sm">
+                    <button class="btn btn-secondary">1</button>
+                    <button class="btn btn-secondary">2</button>
+                    <button class="btn btn-secondary">3</button>
+                    <button class="btn btn-secondary">4</button>
+                </div>
+            </div>
+        </div>
+<!--Tambien podemos crear grupos de botones en fomrma vertical, basta con asignarle la clase de btn-group-vertical-->
+        <div class="row pt-5">
+            <div class="col">
+                <div class="btn-group-vertical">
+                    <button class="btn btn-secondary">1</button>
+                    <button class="btn btn-secondary">2</button>
+                    <button class="btn btn-secondary">3</button>
+                    <button class="btn btn-secondary">4</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
